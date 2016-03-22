@@ -1,0 +1,6 @@
+<nav id="mainNav">
+  <ul>
+    <li><a href="{{.Site.BaseURL}}article/">articles</a></li>
+    {{if isset .Site.Params "showPagesOnMainNav"}}{{range .Data.Pages}}{{if eq .Type "page"}}<li><a href="{{.Permalink}}">{{.Title}}</a></li>{{end}}{{end}}{{end}}
+  </ul>
+</nav>
