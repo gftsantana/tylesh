@@ -1,0 +1,8 @@
+<div id="newest">
+  {{range first 3 .Data.Pages}}
+    <div class="featured">
+      <img src="{{.Params.image}}" />
+      <a href="{{.Permalink}}">{{.Title}}</a>
+    </div>
+  {{end}}
+</div>
