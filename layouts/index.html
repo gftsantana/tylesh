@@ -4,5 +4,16 @@
   <body>
     {{partial "header.html" .}}
     {{partial "newest.html" .}}
+    <div id="list_articles">
+      {{range first 10 .Data.Pages}}
+        {{if or (eq .Type "article") (eq .Type "post") }}
+          <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+          <p><a href="{{.Permalink}}">{{.Summary}}</a></p>
+          <a href="{{.Permalink}}" class="more">Read more... </a>
+          <hr>
+        {{end}}
+      {{end}}
+    </div>
+    {{partial "footer.html" .}}
   </body>
 </html>
