@@ -15,18 +15,12 @@ body {
 
 p {
   font-family: sans-serif;
-  line-height: 1.2em;
+  line-height: 1.5;
   font-size: 16pt;
   text-rendering: optimizeLegibility;
   text-align: justify;
 }
 
-img {
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
 small {
   display: block;
@@ -153,7 +147,7 @@ footer li {
 article {
   margin: 0 auto;
   padding: 1em;
-  max-width: 960px;
+  max-width: 800px;
 }
 
 article h2 {
@@ -161,4 +155,11 @@ article h2 {
   text-transform: uppercase;
   padding-left: 0;
   color: #512DA8;
+}
+
+small + img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
