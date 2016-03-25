@@ -14,8 +14,25 @@ body {
 }
 
 p {
-  font-family: serif;
+  font-family: sans-serif;
+  line-height: 1.2em;
+  font-size: 16pt;
+  text-rendering: optimizeLegibility;
+  text-align: justify;
 }
+
+img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+small {
+  display: block;
+  margin-bottom: 2em;
+}
+
 /*header */
 header {
   background-color: #512DA8;
@@ -97,6 +114,8 @@ header h1 {
 #list_articles {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 1em;
+  font-size: 12pt;
 }
 
 #list_articles p a {
@@ -127,4 +146,19 @@ footer li {
 
 .copyright {
   text-align: center;
+}
+
+/* Article */
+
+article {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
+}
+
+article h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-left: 0;
+  color: #512DA8;
 }

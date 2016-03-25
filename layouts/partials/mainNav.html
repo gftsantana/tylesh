@@ -1,8 +1,8 @@
 <nav id="mainNav">
   <ul>
     {{range $.Site.Data.mainNav}}
-    <li><a href="{{.Site.BaseURL}}{{.URL}}">{{.Name}}</a></li>{{end}}
+    <li><a href="{{$.Site.BaseURL}}{{.URL}}">{{.Name}}</a></li>{{end}}
     {{if and (isset .Site.Params "showPagesOnMainNav") (eq .Site.Params.showPagesOnMainNav true)}}{{range .Data.Pages}}{{if eq .Type "page"}}
-    <li><a href="{{.Permalink}}">{{.Title}}</a></li>{{end}}{{end}}{{end}}
+    <li><a href="{{.Site.BaseURL.Permalink}}">{{.Title}}</a></li>{{end}}{{end}}{{end}}
   </ul>
 </nav>
