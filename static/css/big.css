@@ -178,8 +178,12 @@ article {
 }
 
 i {
-  color: #FF5722;
+  color: #b6b6b6;
   text-rendering: geometricPrecision;
+}
+
+i:hover {
+  color: #FF5722;
 }
 
 #share a {
