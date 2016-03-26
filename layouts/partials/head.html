@@ -16,5 +16,9 @@
   <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href="/css/big.css" rel="stylesheet" />
-</head>
+  <link rel="stylesheet" media="screen and (max-device-width: 800px)"
+      href="/css/small.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 801px)"
+      href="/css/big.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>

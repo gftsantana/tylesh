@@ -3,10 +3,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 body {
   color: #212121;
   margin: 0;
@@ -15,64 +11,40 @@ body {
 
 p {
   font-family: sans-serif;
+  font-size: 1.5em;
   line-height: 1.5;
-  font-size: 16pt;
   text-rendering: optimizeLegibility;
-  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-rendering: geometricPrecision;
+  color: #673AB7;
 }
 
 small {
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /*header */
 header {
-  background-color: #512DA8;
   margin: 0;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header a:hover {
-  text-decoration: none;
-}
-
-header nav {
-  background-color: #673AB7;
-  line-height: 3;
 }
 
 header nav li {
   list-style: none;
-  display: inline-block;
-  padding: 2px 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-header nav li a:hover {
-  text-decoration: none;
-  transition: 3s;
-  color: #FF5722;
-}
 header h1 {
   margin: 0;
   padding: 0;
-  text-align: left;
-  padding-left: 2em;
+  text-align: center;
   line-height: 2;
 }
 
 #social {
-  background-color: white;
   text-align: right;
   padding-right: 10%;
   margin-bottom: 20px;
@@ -88,21 +60,15 @@ header h1 {
 
 #newest {
   margin: 0 auto;
-  max-width: 1024px;
-  /*border: 1px solid;*/
 }
 
 .featured {
   display: inline-block;
-  height: 300px;
-  width: 30%;
-  vertical-align: top;
-  margin-left: 2%;
-  margin-right: 0;
+  height: 10em;
+  width: 100%;
   background-size: cover;
   background-color: #512DA8;
   text-align: center;
-  position: relative;
 }
 
 .featured a {
@@ -114,15 +80,11 @@ header h1 {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-  position: absolute;
-  bottom: 0;
-  left: 1em;
 }
 
-/* List of articles on index */
+/* List of articles */
 
 #list_articles {
-  max-width: 1024px;
   margin: 0 auto;
   padding: 1em;
   font-size: 12pt;
@@ -130,10 +92,6 @@ header h1 {
 
 #list_articles p a {
   color: #727272;
-}
-
-hr {
-  color: #B6B6B6;
 }
 
 .more {
@@ -147,7 +105,7 @@ hr {
 article {
   margin: 0 auto;
   padding: 1em;
-  max-width: 800px;
+  max-width: 90%;
 }
 
 #postTitle {
@@ -167,10 +125,7 @@ article {
 i {
   color: #b6b6b6;
   text-rendering: geometricPrecision;
-}
-
-i:hover {
-  color: #FF5722;
+  font-size: .5em;
 }
 
 #share a {
@@ -181,9 +136,10 @@ i:hover {
 /*Footer */
 
 footer {
-  background-color: #D1C4E9;
+  border-top: 1px dotted #b6b6b6;
   margin: 0;
   padding: 1em;
+  color: #b6b6b6;
 }
 
 footer li {
