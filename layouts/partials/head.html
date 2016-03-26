@@ -1,15 +1,16 @@
 <head>
-  {{if eq .Title .Site.Title}}
+{{if eq .Title .Site.Title}}
   <title>{{.Site.Title}}</title>
-  {{else}}
+{{else}}
   <title>{{.Title}} | {{.Site.Title}}</title>
-  {{end}}
+{{end}}
   <meta charset="utf-8">
   <meta name="generator" content="{{.Hugo.Generator}}" />
   <meta name="description" content="{{.Site.Params.description}}" />
   <meta name="author" content="{{.Site.Params.author}}" />
   <meta name="tags" content="{{.Site.Params.metaTags}}" />
   <meta name="robots" content="index, follow" />
+  <meta name="date" content="{{.Date}}" />
 {{ if .RSSlink }}
   <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
