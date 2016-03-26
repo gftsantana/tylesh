@@ -4,7 +4,7 @@
   <body>
     {{partial "header.html" .}}
     <article>
-        <h2>{{.Title}}</h2>
+        <h2 id="postTitle">{{.Title}}</h2>
         <small>{{.Date.Format "Jan 2, 2006"}} | {{with .Params.author}}{{.}}{{end}}</small>
         {{with .Params.image}}
           <img src="{{.}}" />

@@ -163,7 +163,7 @@ article {
   max-width: 800px;
 }
 
-article h2 {
+#postTitle {
   font-size: 3em;
   text-transform: uppercase;
   padding-left: 0;
