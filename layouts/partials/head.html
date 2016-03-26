@@ -1,5 +1,9 @@
 <head>
-  <title>{{.Title}}</title>
+  {{if eq .Title .Site.Title}}
+  <title>{{.Site.Title}}</title>
+  {{else}}
+  <title>{{.Title}} | {{.Site.Title}}</title>
+  {{end}}
   <meta charset="utf-8">
   <meta name="generator" content="{{.Hugo.Generator}}" />
   <meta name="description" content="{{.Site.Params.description}}" />
