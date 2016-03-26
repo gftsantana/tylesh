@@ -39,8 +39,12 @@
       <i class="fa fa-linkedin-square"></i>
     </a>
   {{end}}
-  {{with .RSSlink}}
-    <a href="{{.}}">
+  {{if .RSSlink}}
+    <a href="{{.RSSlink}}">
+      <i class="fa fa-rss-square"></i>
+    </a>
+  {{else}}
+    <a href="{{.Site.BaseURL}}index.xml">
       <i class="fa fa-rss-square"></i>
     </a>
   {{end}}
