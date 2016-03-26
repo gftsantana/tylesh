@@ -23,7 +23,7 @@ p {
 
 
 small {
-  display: block;
+  display: inline-block;
   margin-bottom: 2em;
 }
 
@@ -170,9 +170,19 @@ article {
   color: #512DA8;
 }
 
-small + img {
+.article-image {
   max-width: 90%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
+}
+
+i {
+  color: #FF5722;
+  text-rendering: geometricPrecision;
+}
+
+#share a {
+  display: inline-block;
+  padding-right: 1em;
 }

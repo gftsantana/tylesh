@@ -5,9 +5,38 @@
     {{partial "header.html" .}}
     <article>
         <h2 id="postTitle">{{.Title}}</h2>
-        <small>{{.Date.Format "Jan 2, 2006"}} | {{with .Params.author}}{{.}}{{end}}</small>
+        <small class="date">{{.Date.Format "Jan 2, 2006"}}</small>
+        {{if .Params.author}}
+          <small class="author"> | {{.Params.author}}</small>
+        {{else if .Site.Params.author}}
+          <small class="author"> | {{.Site.Params.author}}</small>
+        {{end}}
+        <div id="share">
+          <a href="http://twitter.com/share?url={{.Permalink}};text={{.Title}};count=none" target="_blank">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          <a href="http://www.facebook.com/share.php?u={{.Permalink}}&title={{.Title}}" target="_blank">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://plus.google.com/share?url={{.Permalink}}" target="_blank">
+            <i class="fa fa-google-plus fa-2x"></i>
+          </a>
+          <a href="http://www.linkedin.com/shareArticle?mini=true&url={{.Permalink}}&title={{.Title}}&source={{.Site.BaseURL}}" target="_blank">
+            <i class="fa fa-linkedin fa-2x"></i>
+          </a>
+          <a href="http://pinterest.com/pin/create/bookmarklet/?url={{.Permalink}}&is_video=false&description={{.Summary}}" target="_blank">
+            <i class="fa fa-pinterest fa-2x"></i>
+          </a>
+          <a href="http://www.reddit.com/submit?url={{.Permalink}}&title={{.Title}}" target="_blank">
+            <i class="fa fa-reddit fa-2x"></i>
+          </a>
+          <a href="http://del.icio.us/post?url={{.Permalink}}&title={{.Title}}&notes={{.Summary}}">
+            <i class="fa fa-delicious fa-2x"></i>
+          </a>
+
+        </div>
         {{with .Params.image}}
-          <img src="{{.}}" />
+          <img src="{{.}}" class="article-image" />
         {{end}}
         {{.Content}}
     </article>
