@@ -1,4 +1,51 @@
 <header>
+  <div id="social">
+    {{with .Site.Params.youtube}}
+      <a href="{{.}}">
+        <i class="fa fa-youtube-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.facebook}}
+      <a href="{{.}}">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.twitter}}
+      <a href="{{.}}">
+        <i class="fa fa-twitter-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.instagram}}
+      <a href="{{.}}">
+        <i class="fa fa-instagram-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.flickr}}
+      <a href="{{.}}">
+        <i class="fa fa-flickr-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.github}}
+      <a href="{{.}}">
+        <i class="fa fa-github-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.bitbucket}}
+      <a href="{{.}}">
+        <i class="fa fa-bitbucket-square"></i>
+      </a>
+    {{end}}
+    {{with .Site.Params.linkedin}}
+      <a href="{{.}}">
+        <i class="fa fa-linkedin-square"></i>
+      </a>
+    {{end}}
+    {{with .RSSlink}}
+      <a href="{{.}}">
+        <i class="fa fa-rss-square"></i>
+      </a>
+    {{end}}
+  </div>
   <h1><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h1>
   {{partial "mainNav" .}}
 </header>

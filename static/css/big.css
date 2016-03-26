@@ -68,6 +68,19 @@ header h1 {
   line-height: 2;
 }
 
+#social {
+  background-color: white;
+  text-align: right;
+  padding-right: 10%;
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+#social i {
+  color: #FF5722;
+  font-size: 2em;
+}
+
 /* new content */
 
 #newest {
