@@ -36,13 +36,24 @@
           <a href="https://getpocket.com/save?url={{.Permalink}}" target="_blank">
             <i class="fa fa-get-pocket fa-2x"></i>
           </a>
-
         </div>
         {{with .Params.image}}
           <img src="{{.}}" class="article-image" />
         {{end}}
         {{.Content}}
     </article>
+    <div id="list_articles">
+    {{ with .Prev }}
+      <div class="previous-next-article previous-article">
+  		     {{.Render "li"}}
+      </div>
+  	{{ end }}
+    {{ with .Next }}
+      <div class="previous-next-article next-article">
+			     {{.Render "li"}}
+      </div>
+		{{ end }}
+    </div>
     {{partial "footer.html" .}}
   </body>
 </html>

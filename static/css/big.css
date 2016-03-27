@@ -128,12 +128,19 @@ header h1 {
   font-size: 12pt;
 }
 
+#list_articles::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 #list_articles p a {
   color: #727272;
 }
 
-hr {
-  color: #B6B6B6;
+.summary {
+  font-size: .9em;
 }
 
 .more {
@@ -157,6 +164,19 @@ hr {
   text-decoration: none;
 }
 
+.previous-next-article {
+  display:inline-block;
+  max-width: 48%;
+  vertical-align: top;
+}
+
+.previous-article {
+  float: left;
+}
+
+.next-article {
+  float: right;
+}
 /* Article */
 
 article {
