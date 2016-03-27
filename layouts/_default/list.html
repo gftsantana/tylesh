@@ -4,9 +4,21 @@
     <body>
     {{partial "header.html" .}}
     <div id="list_articles">
-      {{ range .Data.Pages }}
+      {{ range .Paginator.Pages}}
         {{ .Render "li" }}
       {{ end }}
+      <div id="paginator">
+      {{ if .Paginator.HasPrev }}
+          <a class="paginator-navigation previous-page" href="{{ .Paginator.Prev.URL }}">
+              <i class="fa fa-arrow-circle-left fa-3x"></i>
+          </a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+          <a class="paginator-navigation next-page" href="{{ .Paginator.Next.URL }}">
+              <i class="fa fa-arrow-circle-right fa-3x"></i>
+          </a>
+      {{ end }}
+      </div>
     </div>
     {{partial "footer.html" .}}
     </body>

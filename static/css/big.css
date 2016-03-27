@@ -142,6 +142,21 @@ hr {
   color: #FF5722;
 }
 
+#paginator {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.paginator-navigation i {
+  color: #FF5722;
+  padding: 0 1em;
+  display: inline-block;
+}
+
+.paginator-navigation i:hover {
+  text-decoration: none;
+}
+
 /* Article */
 
 article {
