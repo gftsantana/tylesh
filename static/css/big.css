@@ -63,6 +63,12 @@ header nav li a:hover {
   transition: 3s;
   color: #FF5722;
 }
+
+.menu-current, .menu-current:hover {
+  text-decoration: underline;
+  text-decoration-color: #FF5722;
+}
+
 header h1 {
   margin: 0;
   padding: 0;

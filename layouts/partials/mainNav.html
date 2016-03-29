@@ -1,8 +1,8 @@
+{{$currentNode := .}}
 <nav id="mainNav">
   <ul>
-    {{range $.Site.Data.mainNav}}
-    <li><a href="{{$.Site.BaseURL}}{{.URL}}">{{.Name}}</a></li>{{end}}
-    {{if and (isset .Site.Params "showPagesOnMainNav") (eq .Site.Params.showPagesOnMainNav true)}}{{range .Data.Pages}}{{if eq .Type "page"}}
-    <li><a href="{{.Site.BaseURL.Permalink}}">{{.Title}}</a></li>{{end}}{{end}}{{end}}
+    {{range .Site.Menus.main}}
+    <li><a {{ if ($currentNode.IsMenuCurrent "main" .)}} class="menu-current" {{end}} href="{{.URL}}">{{.Name}}</a></li>
+    {{end}}
   </ul>
 </nav>

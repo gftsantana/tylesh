@@ -37,6 +37,11 @@ header nav li {
   font-weight: bold;
 }
 
+.menu-current {
+  text-decoration: underline;
+  text-decoration-color: #FF5722;
+}
+
 header h1 {
   margin: 0;
   padding: 0;
