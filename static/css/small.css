@@ -161,6 +161,13 @@ i {
   padding-right: 1em;
 }
 
+/* Disqus */
+
+.comments {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 /*Footer */
 
 footer {

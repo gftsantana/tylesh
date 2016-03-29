@@ -219,6 +219,13 @@ i:hover {
   padding-right: 1em;
 }
 
+/* Disqus */
+
+.comments {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /*Footer */
 
 footer {
