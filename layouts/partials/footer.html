@@ -1,6 +1,7 @@
 <footer>
   <h3><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h3>
-  {{if and (isset .Site.Params "showPagesOnFooter") (eq .Site.Params.showPagesOnFooter true)}}{{range .Data.Pages}}{{if eq .Type "page"}}
-  <li><a href="{{.Permalink}}">{{.Title}}</a></li>{{end}}{{end}}{{end}}
+  {{range .Site.Menus.footer}}
+  <li><a href="{{.URL}}">{{.Name}}</a></li>
+  {{end}}
   <small class="copyright">&copy; {{.Site.Copyright}}</small>
 </footer>
