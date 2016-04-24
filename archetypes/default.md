@@ -1,2 +1,5 @@
 +++
+author = ""
+color = ""
+image = ""
 +++
