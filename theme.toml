@@ -4,18 +4,12 @@
 name = "Tylesh"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://siteforthistheme.com/"
+description = "Tylesh is a theme for the Hugo static site generator. It is designed to load fast and still have a lot of features."
+homepage = "https://github.com/gftsantana/tylesh/"
 tags = ["", ""]
 features = ["", ""]
 min_version = 0.14
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Gildo Santana"
+  homepage = "https://github.com/gftsantana"
