@@ -6,7 +6,7 @@
     {{partial "newest.html" .}}
     <div id="list_articles">
       {{range first 10 .Data.Pages}}
-        {{if or (eq .Type "article") (eq .Type "post") }}
+        {{if not (eq .Type "page")}}
           {{.Render "li"}}
         {{end}}
       {{end}}

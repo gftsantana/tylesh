@@ -1,7 +1,9 @@
 <div id="newest">
   {{range first 3 .Data.Pages}}
+    {{if not (eq .Type "page")}}
     <div class="featured" {{with .Params.image}}style="background-image: url({{.}});"{{end}} {{with .Params.color}}style="background-color: {{.}};"{{end}}>
       <a href="{{.Permalink}}">{{.Title}}</a>
     </div>
+    {{end}}
   {{end}}
 </div>
