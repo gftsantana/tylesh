@@ -43,12 +43,12 @@
         {{.Content}}
     </article>
     <div id="list_articles">
-    {{ with .Prev }}
+    {{ with .PrevInSection }}
       <div class="previous-next-article previous-article">
   		     {{.Render "li"}}
       </div>
   	{{ end }}
-    {{ with .Next }}
+    {{ with .NextInSection }}
       <div class="previous-next-article next-article">
 			     {{.Render "li"}}
       </div>
